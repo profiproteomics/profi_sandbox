@@ -5,9 +5,11 @@
  */
 package fr.proline.studio.pattern;
 
+import fr.proline.core.orm.msi.dto.DPeptideMatch;
 import fr.proline.studio.dam.tasks.data.ptm.PTMDataset;
 import fr.proline.studio.dam.tasks.data.ptm.PTMPeptideInstance;
 import fr.proline.studio.dam.tasks.data.ptm.PTMSite;
+import fr.proline.studio.rsmexplorer.gui.PTMPeptidesTablePanel;
 import fr.proline.studio.rsmexplorer.gui.ptm.PTMPeptidesGraphicView;
 import java.util.ArrayList;
 import java.util.List;
@@ -97,11 +99,17 @@ public class DataBoxPTMPeptidesGraphic extends DataBoxPTMPeptides {
     public Object getData(boolean getArray, Class parameterType) {
         if (parameterType != null) {
             if (parameterType.equals(PTMPeptideInstance.class)) {
-                PTMPeptideInstance selectedParentPepInstance = ((PTMPeptidesGraphicView) getDataBoxPanelInterface()).getSelectedPeptideInstance();
+                PTMPeptideInstance selectedParentPepInstance = ((PTMPeptidesGraphicView) getDataBoxPanelInterface()).getSelectedPTMPeptideInstance();
                 if (selectedParentPepInstance != null) {
                     return selectedParentPepInstance;
                 }
                 return null;
+            }
+            if (parameterType.equals(DPeptideMatch.class)) {
+                PTMPeptideInstance selectedParentPepInstance = ((PTMPeptidesGraphicView) getDataBoxPanelInterface()).getSelectedPTMPeptideInstance();
+                if (selectedParentPepInstance != null) {
+                    return selectedParentPepInstance.getBestPepMatch();
+                }
             }
         }
 
