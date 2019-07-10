@@ -75,18 +75,16 @@ public class ProteinPTMClusterTableModel extends LazyTableModel implements Globa
   private static final String[] m_columnTooltips = {"Protein Id", "Protein", "Peptide", "Score of the peptide match", "Number of peptides matching the modification site", "Number of PTM modifications sites clustered", "PTM modifications associated with this peptide", "PTMs delta mass", "PTMs probability", "Peptide match spectrum title", "Fold change distance"};
 
   private ArrayList<PTMCluster> m_ptmClusters = null;
-
-  private final ArrayList<String> m_modificationsArray = new ArrayList<>();
-  private final HashMap<String, Integer> m_modificationsMap = new HashMap<>();
-
-  private final ArrayList<Character> m_residuesArray = new ArrayList<>();
-  private final HashMap<Character, Integer> m_residuesMap = new HashMap<>();
+//
+//  private final ArrayList<String> m_modificationsArray = new ArrayList<>();
+//  private final HashMap<String, Integer> m_modificationsMap = new HashMap<>();
+//
+//  private final ArrayList<Character> m_residuesArray = new ArrayList<>();
+//  private final HashMap<Character, Integer> m_residuesMap = new HashMap<>();
 
   private String m_modelName;
   private PTMDataset m_ptmDataset = null;
   private String m_modificationInfo = "";
-
-  private final boolean m_hideRedundantPeptides = false;
 
   private final ScoreRenderer m_scoreRenderer = new ScoreRenderer();
 
