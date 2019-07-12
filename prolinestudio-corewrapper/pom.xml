@@ -18,6 +18,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <core.version>2.1.0-SNAPSHOT</core.version>
         <util.version>0.8.0-SNAPSHOT</util.version>
+        <netbeans.hint.license>cecill2.1</netbeans.hint.license>
     </properties>
 
     <dependencies>
