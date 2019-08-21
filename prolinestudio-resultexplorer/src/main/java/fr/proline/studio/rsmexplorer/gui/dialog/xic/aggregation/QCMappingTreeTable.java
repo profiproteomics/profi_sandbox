@@ -36,8 +36,7 @@ import org.slf4j.LoggerFactory;
 /**
  *
  * @author Karine XUE
- * comment modify
- * 
+ *
  */
 public class QCMappingTreeTable extends JXTreeTable {
 
