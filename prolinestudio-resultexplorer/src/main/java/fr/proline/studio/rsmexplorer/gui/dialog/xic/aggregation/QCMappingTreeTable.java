@@ -36,7 +36,8 @@ import org.slf4j.LoggerFactory;
 /**
  *
  * @author Karine XUE
- * This is a githut commit test
+ * git person push test
+ * git push person test2
  */
 public class QCMappingTreeTable extends JXTreeTable {
 
