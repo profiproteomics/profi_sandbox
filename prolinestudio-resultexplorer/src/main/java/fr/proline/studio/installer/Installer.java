@@ -34,7 +34,7 @@ import org.openide.windows.WindowManager;
  * 1- Used to connect to web-core and UDS database as soon as possible
  * 
  * 2- Used to check when the user wants to close the application
- *  TEST PR
+ *  TEST PR2....
  * @author jm235353
  */
 public class Installer extends VersionInstaller {
