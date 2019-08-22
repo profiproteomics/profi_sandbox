@@ -14,7 +14,8 @@
     <packaging>pom</packaging>
 
     <name>ProlineStudio-parent</name>
-    <description>Proline Studio in sandbox</description>
+    <description>Proline Studio in sandbox test2</description>
+
     <modules>
         <module>prolinestudio-corewrapper</module>
 		<module>prolinestudio-logger</module>
